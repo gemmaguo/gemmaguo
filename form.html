@@ -20,13 +20,9 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
   
-  <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css"/>
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="stylesheets/main.css">
-  
   
   <!-- Haha I'm funny -->
   <title>who reads this anyway</title>
@@ -44,22 +40,36 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-           <li class="active"><a href="index">Home</a></li>
+           <li><a href="index">Home</a></li>
+           <li><a href="about">About</a></li>
            <li><a href="resume">Resume</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          
-               <li><a href="contact">Contact</a></li>
-
+           <li class="dropdown active">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li><a href="contact">Contact Info</a></li>
+               <li class="active"><a href="form">Contact Me</a></li>
+             </ul>
+           </li>
           </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
     
-<main>
-   <h2 class="w3-center"> Gemma Guo </h2>
-   <p class="w3-center"> Current senior studying Computer Science at UC Berkeley with a passion for tech, all things creative, and cats. </p>
-</main>
-  
+    <div class="jumbotron">
+      <div class="container">
+        <h1> Contact Me </h1>
+          <form action="https://formspree.io/g.guo@berkeley.edu" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="_replyto" placeholder="Email">
+            <input type="text" name="message" placeholder="Message">
+            <input type="submit" value="Send">
+          </form>
+        <p><small> [Website under construction, please forgive the eye-bleeding theme.] </small></p>
+      </div>
+    </div>
   </body>
 </html>
+
+
